@@ -1,16 +1,16 @@
-import {BrowserRouter, Routes, Route} from 'react-router'
+import {HashRouter, Routes, Route} from 'react-router-dom'
 import UsersList from './components/UserList'
 import UserDetails from './components/UserDetails'
 
 function App() {
   return (
     <>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path='/' element={<UsersList/>}/>
         <Route path='users/:id' element={<UserDetails/>}/>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
     </>
   )
 }
