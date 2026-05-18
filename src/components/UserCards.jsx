@@ -8,7 +8,7 @@ const UserCards = () => {
     <main>
   {loading ? (
     <div id="loader">
-      <img src="/loader-blue.gif" alt="" />
+      <img src="/user-filters/loader-blue.gif" alt="" />
     </div>
 
   ) : (
