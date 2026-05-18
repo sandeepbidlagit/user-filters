@@ -6,7 +6,6 @@ const Filters = () => {
   return (
     <aside className="filters">
       <h3>Filter</h3>
-
       <label>
         Category
         <select id="categoryFilter" value={category} onChange={(e)=> setCategory(e.target.value)}>
