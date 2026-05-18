@@ -21,7 +21,7 @@ export const UserContextProvider = ({ children }) => {
     const loadUsers = async () => {
       setLoading(true);
       try {
-        const response = await fetch("/users.json");
+        const response = await fetch("/user-filters/users.json");
         const data = await response.json();
         setAllUsers(data);
         setFilteredUsers(data);
